@@ -1,9 +1,20 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+
+    for(let a = 0; a < array.length; a++){
+
+      for(let t = a + 1; t < array.length; t++){
+
+        if(array[a] + array[t] === target)return true;
+        
+      };
+
+    };
+    return false;
+};
 
 /* 
   Write the Big O time complexity of your function here
+  Quadratic - O(n²) 
 */
 
 /* 
